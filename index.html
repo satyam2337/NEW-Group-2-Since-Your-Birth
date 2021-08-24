@@ -27,7 +27,7 @@
             </nav>
         </div>
 
-        
+
         <div class="container">
             <section>
                 <h1>Since You'r Birth</h1>
@@ -40,29 +40,33 @@
                     </div>
                     <!-- Input Details -->
                     <div class="details">
-                        <label>YOUR NAME</label><br>
-                        <input type="text" name="" id="nameid" required>
-                        <br><br><br>
-                        <label>YOUR DATE OF BIRTH</label><br>
-                        <!-- <input type="date" name="" required> -->
-                        <input autocomplete="off" id="dayid" type="number" max="31" min=1 placeholder="Day"
-                            class="date">
-                        <input autocomplete="off" id="monthid" type="number" max="12" min=1 placeholder="Month"
-                            class="date">
-                        <input autocomplete="off" id="yearid" type="number" max="2100" min=1920 placeholder="Year"
-                            class="date">
+                        <form name="myForm" action="/action_page.php" onsubmit="return myFunction()" method="post">
+                            <label>YOUR NAME</label><br>
+                            <input type="text" name="fname" id="nameid" required>
+                            <br><br><br>
+                            <label>YOUR DATE OF BIRTH</label><br>
+                            <!-- <input type="date" name="" required> -->
+                            <input autocomplete="off" id="dayid" type="number" max="31" min=1 placeholder="Day"
+                                class="date">
+                            <input autocomplete="off" id="monthid" type="number" max="12" min=1 placeholder="Month"
+                                class="date">
+                            <input autocomplete="off" id="yearid" type="number" max="2100" min=1920 placeholder="Year"
+                                class="date">
+                            <br><br><br>
+                            <button type="button" onclick="myFunction()">BEGIN</button>
+                        </form>
                     </div>
-                    <!-- Button -->
-                    <button type="button" onclick="myFunction()">BEGIN</button>
-
-
                 </div>
             </section>
         </div>
-        
+
     </div>
 
 </body>
+
+
+
+
 <script type="text/javascript">
     let image = document.getElementById('image');
     let images = ['img/avatar1.png', 'img/avatar2.png', 'img/avatar3.png', 'img/avatar4.png', 'img/avatar5.png', 'img/avatar6.png', 'img/avatar7.png']
@@ -73,11 +77,18 @@
     }, 1200);
 
     function myFunction() {
-        var a = document.getElementById('dayid').value;
-        var b = document.getElementById('monthid').value;
-        var c = document.getElementById('yearid').value;
-        var d = parseInt(a) + parseInt(b) + parseInt(c);
-        console.log(d);
+        let x = document.forms["myForm"]["nameid"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        let a = document.forms["myForm"]["dayid"].value;
+        let b = document.forms["myForm"]["monthid"].value;
+        let c = document.forms["myForm"]["yearid"].value;
+        if (a == "" || b == "" || c == "") {
+            alert("Date Of Birth must be filled out");
+            return false;
+        }
     }
 
 </script>
