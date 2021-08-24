@@ -24,12 +24,18 @@ body{
 
 
  .logo{
-    margin: 0px 25px;
+     display: inline;
+    /* margin: 0px 25px;
     padding: 0px;
     position:absolute;
     font-size: 1.5rem;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); */
   
+}
+.logo img{
+    /* margin: 15%; */
+    width: 120px;
+    height: 120px;
 }
 /*----------------------nav baar start---------------------------------*/
 .navbar{
