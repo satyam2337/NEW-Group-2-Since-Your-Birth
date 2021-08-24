@@ -19,7 +19,7 @@ body{
     height: auto;
     box-sizing: border-box;
     border: 30px solid transparent;
-    border-image: url("img/border1.png") 30 round;
+    border-image: url("border1.png") 30 round;
 }
 
 
