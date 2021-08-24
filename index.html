@@ -21,7 +21,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="3about.html">About</a></li>
+                    <li><a href="aboutus.html">About</a></li>
                     <li><a href="https://github.com/satyam2337/NEW-Group-2-Since-Your-Birth.git">GitHub</a></li>
                 </ul>
             </nav>
@@ -52,7 +52,7 @@
                                 class="date">
                             <input autocomplete="off" id="yearid" type="number" max="2100" min=1920 placeholder="Year"
                                 class="date">
-                            <br><br><br>
+                            <br><br>
                             <button type="button" onclick="myFunction()">BEGIN</button>
                         </form>
                     </div>
@@ -77,17 +77,20 @@
     }, 1200);
 
     function myFunction() {
-        let x = document.forms["myForm"]["nameid"].value;
-        if (x == "") {
+        let name = document.forms["myForm"]["nameid"].value;
+        let day = document.forms["myForm"]["dayid"].value;
+        let month = document.forms["myForm"]["monthid"].value;
+        let year = document.forms["myForm"]["yearid"].value;
+        if (name == "") {
             alert("Name must be filled out");
             return false;
         }
-        let a = document.forms["myForm"]["dayid"].value;
-        let b = document.forms["myForm"]["monthid"].value;
-        let c = document.forms["myForm"]["yearid"].value;
-        if (a == "" || b == "" || c == "") {
+        if (day == "" || month == "" || year == "") {
             alert("Date Of Birth must be filled out");
             return false;
+        }
+        else{
+            window.location="detail.html"
         }
     }
 

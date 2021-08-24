@@ -36,9 +36,36 @@
         font-size: 25px;
     }
 }
-@media only screen and (max-width : 615px){
+@media only screen and (max-width : 653px){
   
     .details .date{
         width: 50px;
     }
+}
+
+@media only screen and (max-width : 375px ){
+  
+    section h1 {
+    font-size: 1.5rem;
+    }
+    #nameid{
+        width:80%
+    }
+    .details .date{
+        width: 40px;
+    }
+    .navbar{
+        display:none;
+    }
+    .imgdiv img {
+        width: 200px;
+        height: 200px;
+        
+    }
+}
+@media only screen and (max-width : 1024px){
+.border{
+    position: relative;
+    border-image: url("*") 30 round;
+}
 }
