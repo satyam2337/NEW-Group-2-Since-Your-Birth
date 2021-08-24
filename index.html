@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="border">
+        <div class="logo">
+            <h1>S-Y-B</h1>
+
+        </div>
+
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="3about.html">About</a></li>
+                    <li><a href="https://github.com/anuraganand123/Group-2-Project-SinceYourBirth.git">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        <div class="container">
+            <section>
+                <h1>Since You'r Birth</h1>
+                <div class="centerDiv">
+                    <!-- Avatar Image -->
+                    <div class="imgdiv">
+                        <a href='https://www.freepik.com/vectors/people'>
+                            <img src="" width="200" height="200" class="imgchange" id="image">
+                        </a>
+                    </div>
+                    <!-- Input Details -->
+                    <div class="details">
+                        <label>YOUR NAME</label><br>
+                        <input type="text" name="" id="nameid" required>
+                        <br><br><br>
+                        <label>YOUR DATE OF BIRTH</label><br>
+                        <!-- <input type="date" name="" required> -->
+                        <input autocomplete="off" id="dayid" type="number" max="31" min=1 placeholder="Day"
+                            class="date">
+                        <input autocomplete="off" id="monthid" type="number" max="12" min=1 placeholder="Month"
+                            class="date">
+                        <input autocomplete="off" id="yearid" type="number" max="2100" min=1920 placeholder="Year"
+                            class="date">
+                    </div>
+                    <!-- Button -->
+                    <button type="button" onclick="myFunction()">BEGIN</button>
+
+
+                </div>
+            </section>
+        </div>
+        
+    </div>
+
+</body>
+<script type="text/javascript">
+    let image = document.getElementById('image');
+    let images = ['img/avatar1.png', 'img/avatar2.png', 'img/avatar3.png', 'img/avatar4.png', 'img/avatar5.png', 'img/avatar6.png', 'img/avatar7.png']
+    //let images = ['img/avatar0.svg', 'img/avatar1.svg', 'img/avatar2.svg', 'img/avatar3.svg', 'img/avatar4.svg', 'img/avatar5.svg', 'img/avatar6.svg', 'img/avatar7.svg', 'img/avatar8.svg', 'img/avatar9.svg', 'img/avatar10.svg']
+    setInterval(function () {
+        let random = Math.floor(Math.random() * 7);
+        image.src = images[random];
+    }, 1200);
+
+    function myFunction() {
+        var a = document.getElementById('dayid').value;
+        var b = document.getElementById('monthid').value;
+        var c = document.getElementById('yearid').value;
+        var d = parseInt(a) + parseInt(b) + parseInt(c);
+        console.log(d);
+    }
+
+
+
+</script>
+
+</html>

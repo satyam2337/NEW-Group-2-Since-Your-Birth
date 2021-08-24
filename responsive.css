@@ -1,0 +1,44 @@
+@media only screen and (max-width : 598px){
+    .centerDiv{
+        width: 90%;
+    }   
+}
+
+@media only screen and (max-width : 420px){
+    .centerDiv{
+        width: 90%;       
+    }   
+}
+
+@media only screen and (max-width : 389px){
+    section h1{ 
+        font-size:2.1rem; 
+        
+    }
+    .details .date{
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width : 770px){
+  
+    .details .date{
+        width: 70px;
+    }
+
+    .navbar{
+        width:50%;
+    }
+
+    ul li{
+        display: block;
+        margin: 0px 20px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width : 615px){
+  
+    .details .date{
+        width: 50px;
+    }
+}
