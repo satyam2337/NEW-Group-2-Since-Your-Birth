@@ -46,12 +46,8 @@
                             <br><br><br>
                             <label>YOUR DATE OF BIRTH</label><br>
                             <!-- <input type="date" name="" required> -->
-                            <input autocomplete="off" id="dayid" type="number" max="31" min=1 placeholder="Day"
-                                class="date">
-                            <input autocomplete="off" id="monthid" type="number" max="12" min=1 placeholder="Month"
-                                class="date">
-                            <input autocomplete="off" id="yearid" type="number" max="2100" min=1920 placeholder="Year"
-                                class="date">
+                            <input type="date" class="date" id="main_date" required>
+                            
                             <br><br>
                             <button type="button" onclick="myFunction()">BEGIN</button>
                         </form>
@@ -78,19 +74,17 @@
 
     function myFunction() {
         let name = document.forms["myForm"]["nameid"].value;
-        let day = document.forms["myForm"]["dayid"].value;
-        let month = document.forms["myForm"]["monthid"].value;
-        let year = document.forms["myForm"]["yearid"].value;
+        let date = document.forms["myForm"]["main_date"].value;
         if (name == "") {
             alert("Name must be filled out");
             return false;
         }
-        if (day == "" || month == "" || year == "") {
+        if (date=="") {
             alert("Date Of Birth must be filled out");
             return false;
         }
         else{
-            window.location="detail.html"
+            window.location="main_page.html"
         }
     }
 

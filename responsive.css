@@ -21,11 +21,10 @@
 }
 
 @media only screen and (max-width : 770px){
-  
-    .details .date{
-        width: 70px;
-    }
 
+    .centerDiv{
+        width: 90%;       
+    }  
     .navbar{
         width:50%;
     }
@@ -36,10 +35,10 @@
         font-size: 25px;
     }
 }
-@media only screen and (max-width : 653px){
+@media only screen and (max-width : 690px){
   
     .details .date{
-        width: 50px;
+        width: 250px;
     }
 }
 
@@ -57,11 +56,7 @@
     .navbar{
         display:none;
     }
-    .imgdiv img {
-        width: 200px;
-        height: 200px;
-        
-    }
+   
 }
 @media only screen and (max-width : 1024px){
 .border{
