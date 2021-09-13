@@ -71,6 +71,6 @@
 @media only screen and (max-width : 1024px){
 .border{
     position: relative;
-    border-image: url("*") 30 round;
+    
 }
 }

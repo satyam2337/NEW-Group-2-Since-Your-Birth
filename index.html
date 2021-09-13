@@ -47,9 +47,9 @@
                             <label>YOUR DATE OF BIRTH</label><br>
                             <!-- <input type="date" name="" required> -->
                             <input type="date" class="date" id="main_date" required>
-                            
+
                             <br><br>
-                            <button type="button" onclick="myFunction()">BEGIN</button>
+                            <button type="button" id="begin-btn">BEGIN</button>
                         </form>
                     </div>
                 </div>
@@ -57,37 +57,8 @@
         </div>
 
     </div>
-
+<script src="javascript/show.js"></script>
 </body>
 
-
-
-
-<script type="text/javascript">
-    let image = document.getElementById('image');
-    let images = ['img/avatar1.png', 'img/avatar2.png', 'img/avatar3.png', 'img/avatar4.png', 'img/avatar5.png', 'img/avatar6.png', 'img/avatar7.png']
-    //let images = ['img/avatar0.svg', 'img/avatar1.svg', 'img/avatar2.svg', 'img/avatar3.svg', 'img/avatar4.svg', 'img/avatar5.svg', 'img/avatar6.svg', 'img/avatar7.svg', 'img/avatar8.svg', 'img/avatar9.svg', 'img/avatar10.svg']
-    setInterval(function () {
-        let random = Math.floor(Math.random() * 7);
-        image.src = images[random];
-    }, 1200);
-
-    function myFunction() {
-        let name = document.forms["myForm"]["nameid"].value;
-        let date = document.forms["myForm"]["main_date"].value;
-        if (name == "") {
-            alert("Name must be filled out");
-            return false;
-        }
-        if (date=="") {
-            alert("Date Of Birth must be filled out");
-            return false;
-        }
-        else{
-            window.location="main_page.html"
-        }
-    }
-
-</script>
 
 </html>
