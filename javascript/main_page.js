@@ -1,4 +1,4 @@
-var noOfDays = document.getElementById("earthrotation");
+var noOfDays = document.getElementById("no-days");
 var dobHours = document.getElementById("dob-hours");
 
 var Difference_In_Time;

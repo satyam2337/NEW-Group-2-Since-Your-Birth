@@ -1,76 +1,93 @@
-@media only screen and (max-width : 598px){
-    .centerDiv{
-        width: 90%;
-    }   
-}
-
-@media only screen and (max-width : 420px){
-    .centerDiv{
-        width: 90%;       
-    }   
-}
-@media only screen and (max-height: 700px){
-    .centerDiv{
-        flex-direction: initial;
+@media only screen and (max-width: 1024px) {
+    .border {
+        position: relative;
+        border-image: url("") 30 round;
     }
 }
 
-@media only screen and (max-width : 389px){
-    section h1{ 
-        font-size:2.1rem; 
-        
+/* --------------------------------------input details Quetty--------------------------------- */
+
+@media only screen and (max-width: 375px) {
+    section h1 {
+        font-size: 1.5rem;
     }
-    .details .date{
+    #nameid {
+        width: 80%
+    }
+    .details .date {
+        width: 220px;
+    }
+    .navbar {
+        flex-direction: column;
+        /* flex: 1px;
+    text-align: right;
+    border-radius: 10px 60px 10px 60px;
+    background:rgba(88, 104, 129, 0.185); */
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    section h1 {
+        font-size: 2.1rem;
+    }
+    .details .date {
         width: 50px;
     }
 }
 
-
-
-@media only screen and (max-width : 770px){
-
-    .centerDiv{
-        width: 90%;       
-    }  
-    .navbar{
-        width:50%;
-    }
-
-    ul li{
-        display: block;
-        margin: 0px 20px;
-        font-size: 25px;
+@media only screen and (max-width: 420px) {
+    .centerDiv {
+        width: 90%;
     }
 }
-@media only screen and (max-width : 690px){
-  
-    .details .date{
+
+@media only screen and (max-width: 598px) {
+    .centerDiv {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .centerDiv {
+        flex-direction: initial;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .details .date {
         width: 250px;
     }
 }
 
-@media only screen and (max-width : 375px ){
-  
-    section h1 {
-    font-size: 1.5rem;
+/* --------------------------------------input details Quetty end--------------------------------- */
+
+/* ----------------------------nav baar querry-------------------------------------------- */
+
+@media only screen and (max-width: 770px) {
+    .navbar {
+        width: 100%;
+        float: none;
     }
-    #nameid{
-        width:80%
+    nav {
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
     }
-    .details .date{
-        width: 220px;
+    ul li {
+        display: block;
+        margin: 0px 0px;
+        font-size: 25px;
+        padding: 10px 0px;
     }
-    .navbar{
-        flex: 1px;
-    text-align: right;
-    border-radius: 10px 60px 10px 60px;
-    background:rgba(88, 104, 129, 0.185);
+    nav ul li a {
+        border-radius: 10px 10px 10px 10px;
+        transition: background-color 1.1s;
     }
-   
+    nav ul li a:hover {
+        border-radius: 10px 10px 10px 10px;
+        background-color: rgba(0, 0, 0, 0.123);
+        transition: background-color 1.1s;
+        cursor: pointer;
+    }
 }
-@media only screen and (max-width : 1024px){
-.border{
-    position: relative;
-    
-}
-}
+
+/* ----------------------------nav baar querry end-------------------------------------------- */

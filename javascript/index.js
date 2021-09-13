@@ -1,3 +1,4 @@
+//image change function
 let image = document.getElementById("image");
 let images = [
   "img/avatar1.png",
@@ -8,14 +9,14 @@ let images = [
   "img/avatar6.png",
   "img/avatar7.png",
 ];
-
-//image change function
-
+//random image
 setInterval(function () {
   let random = Math.floor(Math.random() * 7);
   image.src = images[random];
 }, 1200);
 
+
+//main function
 function myFunction() {
   var name = document.forms["myForm"]["nameid"].value;
   var date = document.forms["myForm"]["main_date"].value;
