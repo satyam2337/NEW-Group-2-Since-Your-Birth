@@ -43,7 +43,9 @@ function myFunction() {
 
     // (SAVE TO LOCAL STORAGE
     // localStorage.setItem("KEY", "VALUE");
+   
     localStorage.setItem("date", date);
+    localStorage.setItem("name",name);
 
     // REDIRECT OR OPEN NEW WINDOW IF YOU WANT
     // window.open("main_page.html");

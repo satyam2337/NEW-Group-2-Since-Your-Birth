@@ -76,7 +76,7 @@ nav ul li a {
 nav ul li a:hover {
     border-radius: 0px 60px 10px 60px;
     background-color: rgba(0, 0, 0, 0.123);
-    transition: background-color 1.1s;
+    transition: background-color 0.7s;
     cursor: pointer;
 }
 
@@ -96,14 +96,16 @@ section h1 {
 
 .container {
     padding: 0% 0%;
-    border: 5px solid black;
+    border: 4px solid black;
+    box-shadow: 7px 7px 4px #999;
+    border-radius: 20px;
     width: 80%;
     margin: auto;
     height: auto;
 }
 
 .items {
-    padding: 10% 15%;
+    padding: 5% 15%;
     justify-content: space-evenly;
     
 }
@@ -121,6 +123,17 @@ section h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#heart-beat{
+    mix-blend-mode: multiply;
+    height:min-content;
+}
+
+#breath-img{
+    width: 50%;
+    display: flex;
+    margin:auto;
 }
 
 .container p {
@@ -151,6 +164,9 @@ section h1 {
     position: relative;
     padding: 5px 10px;
     background: #ff6331 !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     color: #fff;
     font-size: 30px;
     font-weight: 700;
