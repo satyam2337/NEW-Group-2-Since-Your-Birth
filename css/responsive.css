@@ -7,33 +7,29 @@
 
 /* --------------------------------------input details Quetty--------------------------------- */
 
-@media only screen and (max-width: 375px) {
-    section h1 {
-        font-size: 1.5rem;
+@media only screen and (max-width: 370px) {
+    .centerDiv{
+        width:auto;
+    }
+    .imgdiv img {
+        width: 200px;
+        height: 200px;
+    }
+    #main_date {
+        width: 65%;
     }
     #nameid {
-        width: 80%
+        width: 65%;
     }
-    .details .date {
-        width: 220px;
+    section h1{
+      font-size:1.2rem;  
     }
-    .navbar {
-        flex-direction: column;
-        /* flex: 1px;
-    text-align: right;
-    border-radius: 10px 60px 10px 60px;
-    background:rgba(88, 104, 129, 0.185); */
-    }
+    .centerDiv label{
+        text-align:center;
+        font-size:1.5rem
+    } 
 }
 
-@media only screen and (max-width: 389px) {
-    section h1 {
-        font-size: 2.1rem;
-    }
-    .details .date {
-        width: 50px;
-    }
-}
 
 @media only screen and (max-width: 420px) {
     .centerDiv {
@@ -47,16 +43,33 @@
     }
 }
 
-@media only screen and (max-height: 700px) {
-    .centerDiv {
-        flex-direction: initial;
-    }
-}
-
 @media only screen and (max-width: 690px) {
     .details .date {
         width: 250px;
     }
+}
+
+@media only screen and (max-width: 300px) {
+    .centerDiv{
+        width:auto;
+    }
+    .imgdiv img {
+        width: 200px;
+        height: 200px;
+    }
+    #main_date {
+        width: 80%;
+    }
+    #nameid {
+        width: 80%;
+    }
+    section h1{
+      font-size:1.2rem;  
+    }
+    .centerDiv label{
+        text-align:center;
+        font-size:1.5rem
+    } 
 }
 
 /* --------------------------------------input details Quetty end--------------------------------- */
