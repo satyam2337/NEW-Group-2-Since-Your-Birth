@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-
 body {
     margin: 0vh;
     padding: 0vh;
@@ -15,7 +14,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); */
+    /* background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%); */
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 }
+
 
 .border {
     width: 100%;
@@ -83,8 +86,12 @@ section h1 {
     font-size: 2.5rem;
     color: rgb(0, 0, 0);
     text-align: center;
-    
+    justify-content: center;
+    margin-top: 1vh;
     display:flex;
+    text-shadow: 2px 3px 2px rgb(184, 172, 172);
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 3px;
 }
 
 .container {
@@ -120,6 +127,7 @@ section h1 {
     font-size: 1.5rem;
 }
 
+
 /* __________________________calender image css________________________________________ */
 
 
@@ -129,20 +137,24 @@ section h1 {
     margin: auto;
     max-width: fit-content;
     background-color: rgb(255, 255, 255);
+    border: 3px solid black;
     text-align: center;
     justify-content: center;
     border-radius: 8px;
     overflow: hidden;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+    background-color: #E4E4E1;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);   
 }
 
 .calendar #monthName {
     position: relative;
     padding: 5px 10px;
-    background: #ff6331;
+    background: #ff6331 !important;
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+    letter-spacing: 3.5px !important;
 }
 
 .calendar #dayName {
@@ -165,6 +177,14 @@ section h1 {
     font-size: 20px;
     font-weight: 500;
     color: #999;
+}
+
+/* text shadow */
+.navbar li a,.container_text p{
+    text-shadow: 1px 1px 1px rgb(184, 172, 172);
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+    
 }
 
 /* ___________________________________xxxxxx____________________________________ */

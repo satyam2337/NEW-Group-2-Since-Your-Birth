@@ -46,7 +46,7 @@ function myFunction() {
     localStorage.setItem("date", date);
 
     // REDIRECT OR OPEN NEW WINDOW IF YOU WANT
-    window.open("main_page.html");
-    // location.href = "main_page.html";
+    // window.open("main_page.html");
+    location.href = "main_page.html";
   }
 }
