@@ -137,6 +137,11 @@ section h1 {
     margin:auto;
 }
 
+#sea-level-img{
+    height:50vh !important;
+    object-fit: contain;
+}
+
 .container p {
     font-size: 1.5rem;
 }

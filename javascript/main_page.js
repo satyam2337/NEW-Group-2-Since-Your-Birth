@@ -16,6 +16,8 @@ var moonRevolution = document.getElementById("moon-revolution");
 
 var deForestation = document.getElementById("deforestation");
 
+var seaLevel = document.getElementById("sea-level");
+
 var Difference_In_Time;
 var Difference_In_Days;
 
@@ -67,33 +69,33 @@ function calDate() {
   //To display the final no. of days (result)
   noOfDays.innerHTML =
     `Hey! ${name.toUpperCase()}...<br><br> A lot has happend in the ` +
-    Difference_In_Days +
+    Difference_In_Days.toLocaleString() +
     " days since you were born :) <br><br> Since you were born... <br><br>";
 
   setInterval(function () {
     seconds = seconds + 1;
     dobHours.innerHTML =
-      hours +
+      hours.toLocaleString() +
       " hours have passed :)... <br> <br>" +
-      minutes +
+      minutes.toLocaleString() +
       " minutes have passed so quickly😲... <br><br> " +
-      seconds +
+      seconds.toLocaleString() +
       " sec flew past like Flash ⚡⚡⚡...";
   }, 1000);
 
   setInterval(function () {
     minutes = minutes + 1;
     dobHours.innerHTML =
-      hours +
+      hours.toLocaleString() +
       " hours " +
-      minutes +
+      minutes.toLocaleString() +
       " minutes and " +
-      seconds +
+      seconds.toLocaleString() +
       " sec have passed since you were born :)";
   }, 60000);
 
   
-  //-------------heart beat count-----------------
+  //-------------heart beat count and RBC production rate -----------------
 
   let heartBeatCount = minutes*72;
   let bloodPumped = minutes*5;
@@ -104,19 +106,19 @@ function calDate() {
   },1200);
 
   setInterval(()=>{
-    rbcCount += 2000;
-    beatCount.innerHTML = `Your heart has beaten about ${heartBeatCount} times and pumped ${bloodPumped} L of blood.<br><br>
-    Your body has produced ${parseInt(rbcCount)} red blood cells.`;
+    rbcCount += 1999;
+    beatCount.innerHTML = `Your heart has beaten about ${heartBeatCount.toLocaleString()} times and pumped ${bloodPumped.toLocaleString()} L of blood.<br><br>
+    Your body has produced ${(parseInt(rbcCount)).toLocaleString()} red blood cells.`;
   },1);
 
   
-  //------------breath rate count and RBC production rate ------------------
+  //------------breath rate count------------------
 
   let breathRate = minutes*14;
 
   setInterval(function(){
     breathRate += 1;
-    breath.innerHTML = `You have taken about ${breathRate} breaths.`;
+    breath.innerHTML = `You have taken about ${breathRate.toLocaleString()} breaths.`;
   },2300);
 
   //-------------distance travelled by earth-----------------
@@ -125,13 +127,13 @@ function calDate() {
 
   setInterval(()=>{
     distanceTravelled += 0.029785;
-    distanceTravelledByEarth.innerHTML = `You've travelled ${parseInt(distanceTravelled)} km around the sun.`;
+    distanceTravelledByEarth.innerHTML = `You've travelled ${(parseInt(distanceTravelled)).toLocaleString()} km around the sun.`;
   },1);
 
  //------------total rotation of earth----------------------
 
  let rotation = Difference_In_Days;  //since 1 rotaion is completed in 1 day
- earthRotation.innerHTML = `Earth has completed ${rotation} rotations since you were born...`
+ earthRotation.innerHTML = `Earth has completed ${rotation.toLocaleString()} rotations since you were born...`
 
   //-----------------solar system's revolution around milkyway------------------
 
@@ -139,24 +141,27 @@ function calDate() {
   setInterval(()=>{
     milkywayDistance += 0.23;
     milkyway.innerHTML = `Not only that, but our entire solar system is orbiting the Milky Way... <br><br>
-    So you've also travelled ${parseInt(milkywayDistance)} km around the Milky <br>Way!`
+    So you've also travelled ${(parseInt(milkywayDistance)).toLocaleString()} km around the Milky <br>Way!`
   },1);
 
   //-------------------moon's revolution around earth---------------------------
 
   let moonRevolutionCount = Difference_In_Days/27.322;
-  moonRevolution.innerHTML=`The moon has orbited you ${parseInt(moonRevolutionCount)} times in your lifetime.<br><br>
+  moonRevolution.innerHTML=`The moon has orbited you ${(parseInt(moonRevolutionCount)).toLocaleString()} times in your lifetime.<br><br>
   Moon's revolution around earth and rotation on its axis is nearly same...<br><br>
-  That means it has rotated around ${parseInt(moonRevolutionCount)} times on its axis.`;
+  That means it has rotated around ${(parseInt(moonRevolutionCount)).toLocaleString()} times on its axis.`;
 
   // ---------------------------deforestation-----------------------------------
   let deforestationRate = seconds*1.5;
   setInterval(()=>{
     deforestationRate += 1.5;
-    deForestation.innerHTML = `${parseInt(deforestationRate)} acre of forests have been cut down since you were born...`
+    deForestation.innerHTML = `${(parseInt(deforestationRate)).toLocaleString()} acre of forests have been cut down since you were born...`
   },1000);
 
+  //-----------------------sea level rising rate--------------------------------
 
+  let seaLevelRise = (Difference_In_Days/365)*0.36;
+  seaLevel.innerHTML = `sea level has risen by ${seaLevelRise.toFixed(2)} cm since your birth...`;
   
 }
 
