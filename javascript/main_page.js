@@ -14,6 +14,8 @@ var earthRotation = document.getElementById("earth-rotation");
 var milkyway = document.getElementById("milkyway");
 var moonRevolution = document.getElementById("moon-revolution");
 
+var deForestation = document.getElementById("deforestation");
+
 var Difference_In_Time;
 var Difference_In_Days;
 
@@ -62,11 +64,17 @@ function calDate() {
   let minutes = hours * 60;
   let seconds = minutes * 60;
 
+  //To display the final no. of days (result)
+  noOfDays.innerHTML =
+    `Hey! ${name.toUpperCase()}...<br><br> A lot has happend in the ` +
+    Difference_In_Days +
+    " days since you were born :) <br><br> Since you were born... <br><br>";
+
   setInterval(function () {
     seconds = seconds + 1;
     dobHours.innerHTML =
       hours +
-      " hours have passed Since you were born :) <br> " +
+      " hours have passed :)... <br> <br>" +
       minutes +
       " minutes have passed so quickly😲... <br><br> " +
       seconds +
@@ -84,6 +92,7 @@ function calDate() {
       " sec have passed since you were born :)";
   }, 60000);
 
+  
   //-------------heart beat count-----------------
 
   let heartBeatCount = minutes*72;
@@ -96,8 +105,8 @@ function calDate() {
 
   setInterval(()=>{
     rbcCount += 2000;
-    beatCount.innerHTML = `Your haert has beaten about ${heartBeatCount} times and pumped ${bloodPumped} L of blood.<br><br>
-    your body has produced ${parseInt(rbcCount)} red blood cells.`;
+    beatCount.innerHTML = `Your heart has beaten about ${heartBeatCount} times and pumped ${bloodPumped} L of blood.<br><br>
+    Your body has produced ${parseInt(rbcCount)} red blood cells.`;
   },1);
 
   
@@ -107,7 +116,7 @@ function calDate() {
 
   setInterval(function(){
     breathRate += 1;
-    breath.innerHTML = `you have taken about ${breathRate} breaths.`;
+    breath.innerHTML = `You have taken about ${breathRate} breaths.`;
   },2300);
 
   //-------------distance travelled by earth-----------------
@@ -116,13 +125,13 @@ function calDate() {
 
   setInterval(()=>{
     distanceTravelled += 0.029785;
-    distanceTravelledByEarth.innerHTML = `you've travelled ${parseInt(distanceTravelled)} km around the sun.`;
+    distanceTravelledByEarth.innerHTML = `You've travelled ${parseInt(distanceTravelled)} km around the sun.`;
   },1);
 
  //------------total rotation of earth----------------------
 
  let rotation = Difference_In_Days;  //since 1 rotaion is completed in 1 day
- earthRotation.innerHTML = `earth has completed ${rotation} rotations since you were born...`
+ earthRotation.innerHTML = `Earth has completed ${rotation} rotations since you were born...`
 
   //-----------------solar system's revolution around milkyway------------------
 
@@ -130,21 +139,25 @@ function calDate() {
   setInterval(()=>{
     milkywayDistance += 0.23;
     milkyway.innerHTML = `Not only that, but our entire solar system is orbiting the Milky Way... <br><br>
-    so you've also travelled ${parseInt(milkywayDistance)} km around the Milky <br>Way!`
+    So you've also travelled ${parseInt(milkywayDistance)} km around the Milky <br>Way!`
   },1);
 
   //-------------------moon's revolution around earth---------------------------
 
   let moonRevolutionCount = Difference_In_Days/27.322;
   moonRevolution.innerHTML=`The moon has orbited you ${parseInt(moonRevolutionCount)} times in your lifetime.<br><br>
-  moon's revolution around earth and rotation on its axis is nearly same...<br><br>
-  that means it has rotated around ${parseInt(moonRevolutionCount)} times on its axis.`;
+  Moon's revolution around earth and rotation on its axis is nearly same...<br><br>
+  That means it has rotated around ${parseInt(moonRevolutionCount)} times on its axis.`;
 
-  //To display the final no. of days (result)
-  noOfDays.innerHTML =
-    `Hey! ${name.toUpperCase()}...<br><br> A lot has happend in the ` +
-    Difference_In_Days +
-    " days since you were born :) <br><br> Since you were born... <br><br>";
+  // ---------------------------deforestation-----------------------------------
+  let deforestationRate = seconds*1.5;
+  setInterval(()=>{
+    deforestationRate += 1.5;
+    deForestation.innerHTML = `${parseInt(deforestationRate)} acre of forests have been cut down since you were born...`
+  },1000);
+
+
+  
 }
 
 // setInterval(function () {
