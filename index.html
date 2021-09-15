@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <title>SinceYourBirth</title>
-    <link rel="icon" href="./img/syb_icon.png" type="image/x-icon">
-  </head>
 
-  <body>
-    <div class="border">
-      <div class="logo">
-        <img src="./img/syb-logo copy.png" alt="logo" srcset="" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>SinceYourBirth</title>
+  <link rel="icon" href="./img/syb_icon.png" type="image/x-icon">
+</head>
 
-      <div class="navbar">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li>
-              <a
-                href="https://github.com/satyam2337/NEW-Group-2-Since-Your-Birth.git"
-                >GitHub</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="container">
-        <section>
-          <h1>Since Your Birth</h1>
-          <div class="centerDiv">
-            <!-- Avatar Image -->
-            <div class="imgdiv">
-              <a href="https://www.freepik.com/vectors/people">
-                <img
-                  src=""
-                  width="200"
-                  height="200"
-                  class="imgchange"
-                  id="image"
-                />
-              </a>
-            </div>
-            <!-- Input Details -->
-            <div class="details">
-              <form name="myForm" action="index.html" method="GET">
-                <label>YOUR NAME</label><br />
-                <input type="text" name="fname" id="nameid" required />
-                <br /><br /><br />
-                <label>YOUR DATE OF BIRTH</label><br />
-                <!-- <input type="date" name="" required> -->
-                <input type="date" class="date" id="main_date" required />
-
-                <br /><br />
-                <button type="button" id="begin-btn" onclick="myFunction()">
-                  BEGIN
-                </button>
-              </form>
-            </div>
-          </div>
-        </section>
-      </div>
+<body>
+  <div class="border">
+    <div class="logo">
+      <img src="./img/syb-logo copy.png" alt="logo" srcset="" />
     </div>
-    <script
-      language="javascript"
-      type="text/javascript"
-      src="./javascript/index.js"
-    ></script>
-  </body>
+
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li>
+            <a href="https://github.com/satyam2337/NEW-Group-2-Since-Your-Birth.git">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <section>
+        <h1>Since Your Birth</h1>
+        <div class="centerDiv">
+          <!-- Avatar Image -->
+          <div class="imgdiv">
+            <a href="https://www.freepik.com/vectors/people">
+              <img src="" width="200" height="200" class="imgchange" id="image" />
+            </a>
+          </div>
+          <!-- Input Details -->
+          <div class="details">
+            <form name="myForm" action="index.html" method="GET">
+              <label>YOUR NAME</label><br />
+              <input type="text" name="fname" id="nameid" required />
+              <br /><br /><br />
+              <label>YOUR DATE OF BIRTH</label><br />
+              <!-- <input type="date" name="" required> -->
+              <input type="date" class="date" id="main_date" required />
+
+              <br /><br />
+              <button type="button" id="begin-btn" onclick="myFunction()">
+                BEGIN
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script language="javascript" type="text/javascript" src="./javascript/index.js"></script>
+</body>
+
 </html>
