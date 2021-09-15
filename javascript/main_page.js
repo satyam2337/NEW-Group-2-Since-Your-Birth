@@ -11,6 +11,8 @@ var breath = document.getElementById("breath-rate");
 
 var distanceTravelledByEarth = document.getElementById("distance-travelled-earth");
 var earthRotation = document.getElementById("earth-rotation");
+var milkyway = document.getElementById("milkyway");
+var moonRevolution = document.getElementById("moon-revolution");
 
 var Difference_In_Time;
 var Difference_In_Days;
@@ -85,15 +87,21 @@ function calDate() {
   //-------------heart beat count-----------------
 
   let heartBeatCount = minutes*72;
-  let bloodPumped = Difference_In_Days*6000;
+  let bloodPumped = minutes*5;
+  let rbcCount = seconds*2000000;
 
   setInterval(function () {
     heartBeatCount += 1;
-    beatCount.innerHTML = "Your haert has beaten about " + heartBeatCount + " times and pumped " + bloodPumped + " L of blood."
   },1200);
 
+  setInterval(()=>{
+    rbcCount += 2000;
+    beatCount.innerHTML = `Your haert has beaten about ${heartBeatCount} times and pumped ${bloodPumped} L of blood.<br><br>
+    your body has produced ${parseInt(rbcCount)} red blood cells.`;
+  },1);
+
   
-  //------------breath rate count ------------------
+  //------------breath rate count and RBC production rate ------------------
 
   let breathRate = minutes*14;
 
@@ -111,10 +119,26 @@ function calDate() {
     distanceTravelledByEarth.innerHTML = `you've travelled ${parseInt(distanceTravelled)} km around the sun.`;
   },1);
 
-  //------------total rotation of earth----------------------
+ //------------total rotation of earth----------------------
 
-  let rotation = Difference_In_Days;  //since 1 rotaion is completed in 1 day
-  earthRotation.innerHTML = `earth has completed ${rotation} rotations since you were born...`
+ let rotation = Difference_In_Days;  //since 1 rotaion is completed in 1 day
+ earthRotation.innerHTML = `earth has completed ${rotation} rotations since you were born...`
+
+  //-----------------solar system's revolution around milkyway------------------
+
+  let milkywayDistance = seconds*230;
+  setInterval(()=>{
+    milkywayDistance += 0.23;
+    milkyway.innerHTML = `Not only that, but our entire solar system is orbiting the Milky Way... <br><br>
+    so you've also travelled ${parseInt(milkywayDistance)} km around the Milky <br>Way!`
+  },1);
+
+  //-------------------moon's revolution around earth---------------------------
+
+  let moonRevolutionCount = Difference_In_Days/27.322;
+  moonRevolution.innerHTML=`The moon has orbited you ${parseInt(moonRevolutionCount)} times in your lifetime.<br><br>
+  moon's revolution around earth and rotation on its axis is nearly same...<br><br>
+  that means it has rotated around ${parseInt(moonRevolutionCount)} times on its axis.`;
 
   //To display the final no. of days (result)
   noOfDays.innerHTML =
