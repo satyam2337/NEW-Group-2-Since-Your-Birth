@@ -1,12 +1,10 @@
 /* --------------------------------------input details Quetty--------------------------------- */
 
-@media only screen and (max-width: 370px) {
-    .centerDiv {
-        width: auto;
-    }
+@media only screen and (max-width: 290px) {
+   
     .imgdiv img {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
     #main_date {
         width: 65%;
@@ -19,39 +17,15 @@
     }
     .centerDiv label {
         text-align: center;
-        font-size: 1.5rem
+        font-size: 1.3rem
     }
 }
 
-
-
-@media only screen and (max-width: 690px) {
-    .details .date {
-        width: 250px;
-    }
+@media only screen and (max-width: 363px) {
+.imgdiv img{
+    width: 190px;
+    height: 190px;
 }
-
-@media only screen and (max-width: 300px) {
-    .centerDiv {
-        width: auto;
-    }
-    .imgdiv img {
-        width: 200px;
-        height: 200px;
-    }
-    #main_date {
-        width: 80%;
-    }
-    #nameid {
-        width: 80%;
-    }
-    section h1 {
-        font-size: 1.2rem;
-    }
-    .centerDiv label {
-        text-align: center;
-        font-size: 1.5rem
-    }
 }
 
 /* --------------------------------------input details Quetty end--------------------------------- */
@@ -99,19 +73,19 @@
     .border {
         border: 5px solid transparent;
         border-image: none;
-        
-        
+    }
+    .centerDiv {
+        width: 85%;
     }
 }
 
-@media  only screen and (max-width: 945px) {
+@media only screen and (max-width: 945px) {
     table {
         margin: auto;
         padding: 50px 0px;
         text-align: center;
         border-spacing: 10px 50px;
     }
-    
 }
 
 /* ----------------------------nav baar querry end-------------------------------------------- */
