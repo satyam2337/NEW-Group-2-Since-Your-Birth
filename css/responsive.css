@@ -26,6 +26,7 @@
     width: 190px;
     height: 190px;
 }
+
 }
 
 /* --------------------------------------input details Quetty end--------------------------------- */
@@ -36,6 +37,7 @@
     table td {
         display: contents;
     }
+    
 }
 
 @media only screen and (max-width: 784px) {
@@ -85,6 +87,14 @@
         padding: 50px 0px;
         text-align: center;
         border-spacing: 10px 50px;
+    }
+    .centerDiv {
+        width: auto;
+    }
+    table h2{
+        
+            width: auto;
+        
     }
 }
 
