@@ -145,6 +145,47 @@ section h1 {
 .container p {
     font-size: 1.5rem;
 }
+#revolve{
+    height: 60vh ;
+    object-fit: contain;
+}
+#milkyway-gif{
+    height: 60vh ;
+    object-fit: contain;
+}
+#earth{
+    height: 55vh ;
+    object-fit: contain;
+}
+#moon{
+    height: 60vh ;
+    object-fit: contain;
+}
+#tree{
+    height: 70vh ;
+    object-fit: contain;
+}
+
+#nail-gif{
+    height: 50vh ;
+    object-fit: contain;
+}
+#accident-gif{
+    height: 50vh ;
+    object-fit: contain;
+}
+#baby{
+    height: 50vh ;
+    object-fit: contain;
+}
+#volcano-gif{
+    height: 50vh ;
+    object-fit: contain;
+}
+#tect-gif{
+    height: 50vh ;
+    object-fit: contain;
+}
 
 
 /* __________________________calender image css________________________________________ */

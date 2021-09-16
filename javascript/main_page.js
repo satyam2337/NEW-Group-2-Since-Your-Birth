@@ -10,13 +10,26 @@ var beatCount = document.getElementById("beat-count");
 var breath = document.getElementById("breath-rate");
 
 var distanceTravelledByEarth = document.getElementById("distance-travelled-earth");
+
 var earthRotation = document.getElementById("earth-rotation");
+
 var milkyway = document.getElementById("milkyway");
+
 var moonRevolution = document.getElementById("moon-revolution");
 
 var deForestation = document.getElementById("deforestation");
 
 var seaLevel = document.getElementById("sea-level");
+
+var birth = document.getElementById("birth");
+
+var nail = document.getElementById("nail");
+
+var accident = document.getElementById("accident");
+
+var volcano = document.getElementById("volcano");
+
+var tectonic = document.getElementById("tectonic");
 
 var Difference_In_Time;
 var Difference_In_Days;
@@ -106,10 +119,10 @@ function calDate() {
   },1200);
 
   setInterval(()=>{
-    rbcCount += 1999;
+    rbcCount += 19999;
     beatCount.innerHTML = `Your heart has beaten about ${heartBeatCount.toLocaleString()} times and pumped ${bloodPumped.toLocaleString()} L of blood.<br><br>
-    Your body has produced ${(parseInt(rbcCount)).toLocaleString()} red blood cells.`;
-  },1);
+    Your body has produced ${(parseInt(rbcCount)).toLocaleString()} <br> red blood cells.`;
+  },10);
 
   
   //------------breath rate count------------------
@@ -141,7 +154,7 @@ function calDate() {
   setInterval(()=>{
     milkywayDistance += 0.23;
     milkyway.innerHTML = `Not only that, but our entire solar system is orbiting the Milky Way... <br><br>
-    So you've also travelled ${(parseInt(milkywayDistance)).toLocaleString()} km around the Milky <br>Way!`
+    So you've also travelled ${(parseInt(milkywayDistance)).toLocaleString()} km around the <br> Milky Way!`
   },1);
 
   //-------------------moon's revolution around earth---------------------------
@@ -155,13 +168,54 @@ function calDate() {
   let deforestationRate = seconds*1.5;
   setInterval(()=>{
     deforestationRate += 1.5;
-    deForestation.innerHTML = `${(parseInt(deforestationRate)).toLocaleString()} acre of forests have been cut down since you were born...`
   },1000);
+// ---------------------------------forestation-------------------------------------
+  let forestationRate = seconds*60;
+  setInterval(() => {
+    forestationRate += 60;
+    deForestation.innerHTML = `Worldwide ${(parseInt(deforestationRate)).toLocaleString()} acre of forests have been cut down since you were born...<br><br>
+    Is this fact made you sad ???<br><br>
+    Ahh!...hold on, we have another stat that makes you feel good...<br><br>
+    Also ${forestationRate.toLocaleString()} trees have been planted all over the world since you were born :)... `
+  }, 1000);
 
   //-----------------------sea level rising rate--------------------------------
 
   let seaLevelRise = (Difference_In_Days/365)*0.36;
   seaLevel.innerHTML = `sea level has risen by ${seaLevelRise.toFixed(2)} cm since your birth...`;
+
+  // --------------------------birth rate----------------------------
+
+  let birthRate = seconds*4;
+  setInterval(() => {
+    birthRate += 1;
+    birth.innerHTML = `Worldwide ${birthRate.toLocaleString()} babies were born since your birth...`;
+  }, 250);
+
+  // ----------------------------------growth of nails---------------------------------
+
+  let nailRate = ((Difference_In_Days/365)*12)*0.347;
+  let toeNailRate = ((Difference_In_Days/365)*12)*0.162;
+  nail.innerHTML = `If you hadn't cut your finger nails yet since you were born , then it would have been ${nailRate.toLocaleString()} cm long today 😮...<br><br> And, also your toe nails would have been ${toeNailRate.toLocaleString()} cm long 😗...`;
+
+  // ---------------------------------------road accident-----------------------------
+
+  let roadAccident = seconds*0.043;
+  setInterval(() => {
+    roadAccident += 0.043;
+    accident.innerHTML = `${(parseInt(roadAccident)).toLocaleString()} people died in road accidents all over the world since you were born... `
+    
+  }, 1000);
+
+  // ----------------------volcano eruption-------------------------
+
+  let volcanoEruption = Difference_In_Days*0.15;
+  volcano.innerHTML = `${(parseInt(volcanoEruption)).toLocaleString()} volcanic eruptions have occured on the Earth since you were born... `;
+
+  // --------------------------tectonic plates-------------------
+
+  let tectonicPlate = (Difference_In_Days/365)*2;
+  tectonic.innerHTML = ` The Tectonic plates have moved ${(parseInt(tectonicPlate)).toLocaleString()} inches since you were born...`;
   
 }
 
