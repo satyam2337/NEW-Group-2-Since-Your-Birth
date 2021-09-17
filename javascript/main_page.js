@@ -31,6 +31,8 @@ var volcano = document.getElementById("volcano");
 
 var tectonic = document.getElementById("tectonic");
 
+var hair = document.getElementById("hair");
+
 var Difference_In_Time;
 var Difference_In_Days;
 
@@ -216,6 +218,12 @@ function calDate() {
 
   let tectonicPlate = (Difference_In_Days/365)*2;
   tectonic.innerHTML = ` The Tectonic plates have moved ${(parseInt(tectonicPlate)).toLocaleString()} inches since you were born...`;
+
+  // -----------------------------hair growth rate--------------------
+  let hairGrowth = Difference_In_Days*0.044;
+
+  hair.innerHTML = ` If you hadn't cut your hair till this date, then it would have grown ${hairGrowth.toLocaleString()} cm long...`;
+
   
 }
 
