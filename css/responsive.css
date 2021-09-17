@@ -80,6 +80,13 @@
     .centerDiv {
         width: 85%;
     }
+
+    .container p{
+        font-size: 1.2rem;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 945px) {
