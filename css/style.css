@@ -1,6 +1,7 @@
 *{
-    margin: 0vh;
-    padding: 0vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     
 }
 body{
@@ -33,6 +34,7 @@ body{
     height: 120px;
 }
 /*----------------------nav baar start---------------------------------*/
+
 .navbar{
     
     width: 80%;
@@ -71,9 +73,8 @@ nav ul li a {
     transition: background-color 1.1s ;
     cursor: pointer;
 }
-  /*-------------------------nav baar end-------------------------------*/
 
-
+/* ----------------------------------------- */
 
 
 .container{
@@ -157,7 +158,7 @@ input[type="date"][type="text"]{
 /* ------------------------------------------------------------------------------------- */
 
 .imgdiv img {
-    position:relative;
+    /* position:relative; */
     width: 250px;
     height: 250px;
     border: 1px solid black;

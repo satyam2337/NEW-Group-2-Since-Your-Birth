@@ -50,7 +50,7 @@
     }
     nav {
         text-align: center;
-        border-radius: 10px 10px 10px 10px;
+        /* border-radius: 10px 10px 10px 10px; */
     }
     ul li {
         display: block;
@@ -73,7 +73,8 @@
         display: flex;
     }
     .border {
-        border: 5px solid transparent;
+        /* border: 5px solid transparent; */
+        border: 0px;
         border-image: none;
     }
     .centerDiv {
