@@ -33,6 +33,16 @@ var tectonic = document.getElementById("tectonic");
 
 var hair = document.getElementById("hair");
 
+var sun1 = document.getElementById("sun-fusion");
+
+var sun2 = document.getElementById("sun-mass");
+
+var himalaya = document.getElementById("himalaya");
+
+var moonAway = document.getElementById("moon-away");
+
+var india = document.getElementById("india");
+
 var Difference_In_Time;
 var Difference_In_Days;
 
@@ -224,9 +234,49 @@ function calDate() {
 
   hair.innerHTML = ` If you hadn't cut your hair till this date, then it would have grown ${hairGrowth.toLocaleString()} cm long...`;
 
+  // -----------------------hydrogen burn and helium production--------------------------------
+  let hydrogen = seconds*564000000;
+  let helium = seconds*559700000;
+
+  setInterval(() => {
+    hydrogen+= 564000000;
+    
+  }, 1000);
+
+  setInterval(() => {
+    helium+= 559700000;
+    sun1.innerHTML = `By Fusion, the Sun burns about ${hydrogen.toLocaleString()} tonnes hydrogen since your birth... <br> <br> <br> 
+    Which in result produce ${helium.toLocaleString()} tonnes helium...`;
+    
+  }, 1000);
+
+  // ---------------------lossed mass of sun----------------------------
+  let mass = seconds*4300000;
+   setInterval(() => {
+     mass += 4300000;
+     sun2.innerHTML = `Since your first cry, the Sun loses ${mass.toLocaleString()} tonnes of mass...`
+     
+   }, 1000);
+
+
+  //  ---------------------himalaya ---------------------------------
+  let himalayaInc = (Difference_In_Days/365)*1;
+
+  himalaya.innerHTML = `The Himalaya grown taller by ${himalayaInc.toLocaleString()} inches since your birth...`;
+
+// ------------------moon going away----------------------------------
+  let moonSpinAway = (Difference_In_Days/365)*3.78;
+  moonAway.innerHTML = `Moon has spinned ${moonSpinAway.toLocaleString()} cm away from Earth, since you came to existance...`;
+
+  // -----------------------------india shrinking--------------------------------------
+
+  let indiaShrinkRate = (Difference_In_Days/365)*2;
+
+  india.innerHTML = `India’s southern and northern tip (Kanyakumari to Himalayas) have shrinked by ${indiaShrinkRate.toLocaleString()} cm since your first breath...<br><br><br> This means, after 200 million years, there would be no India 😲...<br><br><br><br><br>
+  Who knows what else will happen in your lifetime??? <br><br><br><br><br>
+  🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗 `
   
 }
-
 // setInterval(function () {
 //   calDate();
 // }, 1000);
