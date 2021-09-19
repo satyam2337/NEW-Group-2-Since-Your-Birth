@@ -93,7 +93,7 @@ function calDate() {
 
   //To display the final no. of days (result)
   noOfDays.innerHTML =
-    `Hey! ${name.toUpperCase()}...<br><br> A lot has happend in the ` +
+    `Hey! ${name.toUpperCase()}...<br><br> A lot has happened in the ` +
     Difference_In_Days.toLocaleString() +
     " days since you were born :) <br><br> Since you were born... <br><br>";
 
@@ -266,13 +266,13 @@ function calDate() {
 
 // ------------------moon going away----------------------------------
   let moonSpinAway = (Difference_In_Days/365)*3.78;
-  moonAway.innerHTML = `Moon has spinned ${moonSpinAway.toLocaleString()} cm away from Earth, since you came to existance...`;
+  moonAway.innerHTML = `Moon has spinned ${moonSpinAway.toLocaleString()} cm away from Earth, since you came to existence...`;
 
   // -----------------------------india shrinking--------------------------------------
 
   let indiaShrinkRate = (Difference_In_Days/365)*2;
 
-  india.innerHTML = `India’s southern and northern tip (Kanyakumari to Himalayas) have shrinked by ${indiaShrinkRate.toLocaleString()} cm since your first breath...<br><br><br> This means, after 200 million years, there would be no India 😲...<br><br><br><br><br>
+  india.innerHTML = `India’s southern and northern tip (Kanyakumari to Himalayas) have shrunk by ${indiaShrinkRate.toLocaleString()} cm since your first breath...<br><br><br> This means, after 200 million years, there would be no India 😲...<br><br><br><br><br>
   Who knows what else will happen in your lifetime??? <br><br><br><br><br>
   🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗 `
   
