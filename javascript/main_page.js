@@ -273,10 +273,10 @@ function calDate() {
   let indiaShrinkRate = (Difference_In_Days/365)*2;
 
   india.innerHTML = `India’s southern and northern tip (Kanyakumari to Himalayas) have shrunk by ${indiaShrinkRate.toLocaleString()} cm since your first breath...<br><br><br> This means, after 200 million years, there would be no India 😲...<br><br><br><br><br>
-  Who knows what else will happen in your lifetime??? <br><br>
-  So always <b>STAY HAPPY</b> and live the moment.
+  Who knows what else will happen in your lifetime??? <br><br><br><br>
+  So always STAY HAPPY and live the moment.
   <br><br><br><br><br>
-  🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗 `
+  🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗🤗 `
   
 }
 // setInterval(function () {
